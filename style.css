@@ -1,0 +1,146 @@
+
+body {
+  min-width: 1280px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-content::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #020F20;
+  opacity: 0.4;
+}
+
+.main-content__tooltip {
+  position: absolute;
+
+  width: 41px;
+  height: 41px;
+
+  background-color: #3878eea3;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content__tooltip--green {
+  background-color: #6abf4bb4;
+}
+
+.main-content__tooltip::before,
+.main-content__tooltip::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+  height: 10px;
+  margin: auto;
+  
+  background-color: #ffffff;
+}
+  
+.main-content__tooltip::after {
+  transform: rotate(90deg);
+}
+
+.main-content__text {
+  display: none;
+  color: #ffffff;
+}
+
+.main-content__tooltip--active {
+  width: auto;
+  padding: 0 20px;
+  padding-left: 40px;
+
+  border-radius: 30px;
+  background-color: #3877EE;
+}
+
+.main-content__tooltip--active::before,
+.main-content__tooltip--active::after {
+  left: 20px;
+  right: auto;
+
+  text-align: right;
+}
+
+.main-content__tooltip--active .main-content__text {
+  display: block;
+}
+
+.main-content__tooltip--active.main-content__tooltip--green {
+  background-color: #6ABF4B;
+}
+
+.main-content__tooltip--1 {
+  left: 36%;
+  top: 23%;
+}
+
+.main-content__tooltip--2 {
+  left: 64%;
+  top: 19%;
+}
+
+.main-content__tooltip--3 {
+  left: 56%;
+  top: 30%;
+}
+
+.main-content__tooltip--4 {
+  left: 66%;
+  top: 34%;
+}
+
+.main-content__tooltip--5 {
+  left: 40%;
+  top: 36%;
+}
+
+.main-content__tooltip--6 {
+  left: 53%;
+  top: 45%;
+}
+
+.main-content__tooltip--7 {
+  left: 62%;
+  top: 47%;
+}
+
+.main-content__tooltip--8 {
+  left: 72%;
+  top: 51%;
+}
+
+.main-content__tooltip--9 {
+  left: 55%;
+  top: 56%;
+}
+
+.main-content__tooltip--10 {
+  left: 32%;
+  top: 51%;
+}
