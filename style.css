@@ -81,7 +81,7 @@ body {
 
 .main-content__tooltip--active::before,
 .main-content__tooltip--active::after {
-  left: 20px;
+  left: 19.5px;
   right: auto;
 
   text-align: right;
